@@ -1,7 +1,9 @@
 # API Documentation
 ## AI-Based Social Media Sentiment & Reputation Analysis System
 
-Base URL: `http://127.0.0.1:8000/api`
+Production Base URL: `https://caring-nurturing-production-aac8.up.railway.app/api`
+
+Local Development Base URL: `http://127.0.0.1:8000/api`
 
 Interactive Swagger UI: `http://127.0.0.1:8000/api/docs/`
 OpenAPI 3.0 Schema: `http://127.0.0.1:8000/api/schema/`
@@ -21,6 +23,9 @@ OpenAPI 3.0 Schema: `http://127.0.0.1:8000/api/schema/`
 | `DELETE` | `/sentiment/<id>/` | Delete sentiment record by ID |
 | `GET` | `/analytics/overview/` | Aggregate metrics, sentiment distribution, confidence |
 | `GET` | `/analytics/comparison/` | Twitter vs Instagram comparative statistics |
+| `GET` | `/social/status/` | Check Twitter/X and Meta/Instagram API configuration |
+| `POST` | `/social/fetch/` | Fetch and analyze content through official social APIs |
+| `GET` | `/social/posts/` | List previously ingested social posts/comments |
 
 ---
 
